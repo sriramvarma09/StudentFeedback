@@ -1,0 +1,494 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="d1.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/d2.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Yusei Magic' rel='stylesheet'>
+ 
+    <title>FEEDBACK FORM</title>
+
+    
+</head>
+<header>
+    <div class="subject-faculty">
+      <h3>SUBJECT :   subject_3 </h3>
+      <h3>FACULITY:   faculity </h3>
+
+    </div>
+</header>
+<body>
+
+    <form class="slider" action="{% url 'subject_4' %}">
+
+         <div class="rough">
+            
+        <span>Give</span> 
+        <span>Your</span> 
+        <span>Feedback</span> 
+        <!-- <span>clear</span> 
+        <span>to</span> 
+        <span>me</span> 
+        <span>now</span> -->
+       
+
+        </div>
+        
+       <div class="container">
+        <div>
+            <p><b>α)</b> Teacher comes to Classon time and well prepared in subject.</p>
+            <div class="r1">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree1" name="agreement1" class="regular-radio" />
+                <label for="strongly-disagree1">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree1" name="agreement1" class="regular-radio" />
+                <label for="disagree1">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral1" name="agreement1" class="regular-radio" />
+                <label for="neutral1">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree1" name="agreement1" class="regular-radio" />
+                <label for="agree1">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree1" name="agreement1" class="regular-radio" />
+                <label for="strongly-agree1">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+        <div>
+            <p><b>β)</b> Teacher explains objective, generates curiosity and interest with real time.</p>
+            <div class="r2">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree2" name="agreement2" class="regular-radio" />
+                <label for="strongly-disagree2">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree2" name="agreement2" class="regular-radio" />
+                <label for="disagree2">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral2" name="agreement2" class="regular-radio" />
+                <label for="neutral2">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree2" name="agreement2" class="regular-radio" />
+                <label for="agree2">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree2" name="agreement2" class="regular-radio" />
+                <label for="strongly-agree2">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div>
+            <p><b>γ)</b> Teacher speaks clearly and audibly.</p>
+
+            <div class="r3">
+
+
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree3" name="agreement3" class="regular-radio" />
+                <label for="strongly-disagree3">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree3" name="agreement3" class="regular-radio" />
+                <label for="disagree3">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral3" name="agreement3" class="regular-radio" />
+                <label for="neutral3">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree3" name="agreement3" class="regular-radio" />
+                <label for="agree3">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree3" name="agreement3" class="regular-radio" />
+                <label for="strongly-agree3">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        <br>
+
+        <div>
+            <p><b>δ)</b> Teacher writes and draws ligibly. </p>
+            <div class="r4">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree4" name="agreement4" class="regular-radio" />
+                <label for="strongly-disagree4">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree4" name="agreement4" class="regular-radio" />
+                <label for="disagree4">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral4" name="agreement4" class="regular-radio" />
+                <label for="neutral4">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree4" name="agreement4" class="regular-radio" />
+                <label for="agree4">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree4" name="agreement4" class="regular-radio" />
+                <label for="strongly-agree4">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+
+
+         <div>
+            <p><b>ε)</b> Teacher asks relevant questions for interaction and encourages raising doubts.</p>
+            <div class="r5">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree5" name="agreement5" class="regular-radio" />
+                <label for="strongly-disagree5">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree5" name="agreement5" class="regular-radio" />
+                <label for="disagree5">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral5" name="agreement5" class="regular-radio" />
+                <label for="neutral5">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree5" name="agreement5" class="regular-radio" />
+                <label for="agree5">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree5" name="agreement5" class="regular-radio" />
+                <label for="strongly-agree5">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+        
+
+         <div>
+            <p><b>φ)</b> Teacher covers the syllabus at appropriate pace. </p>
+            <div class="r6">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree6" name="agreement6" class="regular-radio" />
+                <label for="strongly-disagree6">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree6" name="agreement6" class="regular-radio" />
+                <label for="disagree6">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral6" name="agreement6" class="regular-radio" />
+                <label for="neutral6">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree6" name="agreement6" class="regular-radio" />
+                <label for="agree6">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree6" name="agreement6" class="regular-radio" />
+                <label for="strongly-agree6">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+
+
+         <div>
+            <p><b>η)</b> Teacher correction of scripts is fair and impartial and returns papers in time.  </p>
+            <div class="r7">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree7" name="agreement7" class="regular-radio" />
+                <label for="strongly-disagree7">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree7" name="agreement7" class="regular-radio" />
+                <label for="disagree7">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral7" name="agreement7" class="regular-radio" />
+                <label for="neutral7">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree7" name="agreement7" class="regular-radio" />
+                <label for="agree7">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree7" name="agreement7" class="regular-radio" />
+                <label for="strongly-agree7">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+
+
+         <div>
+            <p><b>π)</b> Availability to students during working hours for doubt clarification.</p>
+            <div class="r8">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree8" name="agreement8" class="regular-radio" />
+                <label for="strongly-disagree8">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree8" name="agreement8" class="regular-radio" />
+                <label for="disagree8">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral8" name="agreement8" class="regular-radio" />
+                <label for="neutral8">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree8" name="agreement8" class="regular-radio" />
+                <label for="agree8">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree8" name="agreement8" class="regular-radio" />
+                <label for="strongly-agree8">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+
+
+         <div>
+            <p><b>ψ)</b> Usage of other teaching methods like PPT, OHP and models.</p>
+            <div class="r9">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree9" name="agreement9" class="regular-radio" />
+                <label for="strongly-disagree9">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree9" name="agreement9" class="regular-radio" />
+                <label for="disagree9">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral9" name="agreement9" class="regular-radio" />
+                <label for="neutral9">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree9" name="agreement9" class="regular-radio" />
+                <label for="agree9">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree9" name="agreement9" class="regular-radio" />
+                <label for="strongly-agree9">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+
+
+         <div>
+            <p><b>ω)</b> Help for career guidance and motivation towards future goals.</p>
+            <div class="r10">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree10" name="agreement10" class="regular-radio" />
+                <label for="strongly-disagree10">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree10" name="agreement10" class="regular-radio" />
+                <label for="disagree10">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral10" name="agreement10" class="regular-radio" />
+                <label for="neutral10">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree10" name="agreement10" class="regular-radio" />
+                <label for="agree10">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree10" name="agreement10" class="regular-radio" />
+                <label for="strongly-agree10">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+
+
+         <div>
+            <p><b>λ)</b> Control of teacher on the class</p>
+            <div class="r11">
+            <div class="custom-checkbox left">
+                <input type="radio" id="strongly-disagree11" name="agreement11" class="regular-radio" />
+                <label for="strongly-disagree11">
+                    <div class="tag">1</div>
+                </label>
+            </div>
+            <div class="custom-checkbox left">
+                <input type="radio" id="disagree11" name="agreement11" class="regular-radio" />
+                <label for="disagree11">
+                    <div class="tag">2</div>
+                </label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="radio" id="neutral11" name="agreement11" class="regular-radio" />
+                <label for="neutral11">
+                    <div class="tag">3</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="agree11" name="agreement11" class="regular-radio" />
+                <label for="agree11">
+                    <div class="tag">4</div>
+                </label>
+            </div>
+            <div class="custom-checkbox right">
+                <input type="radio" id="strongly-agree11" name="agreement11" class="regular-radio" />
+                <label for="strongly-agree11">
+                    <div class="tag">5</div>
+                </label>
+            </div>
+        </div>
+        </div>
+        
+         <br>
+
+         <p id ="demo"></p>
+
+         <div class="comment_section">
+            <textarea id="myTextArea" placeholder="  place your comments here ... "></textarea>
+          </div>
+
+          <div class="button-box">
+            <button class="button trigger" onclick="myFunction()">NEXT!</button>
+          </div>
+          
+
+     </div> 
+
+        <!-- <script src="J3.js"></script> -->
+        <!-- <script type="{% static 'js/j3.js' %}"></script> -->
+        <script src="{% static 'js/j4.js' %}"></script>
+   
+
+   
+
+    </form>
+
+
+    
+
+    
+</body>
+ 
+</html>

@@ -1,0 +1,487 @@
+html {
+    box-sizing: border-box;
+
+}
+body{
+    
+    background: #42426b;
+    background-image: -webkit-linear-gradient(115deg, #659999, rgba(231, 117, 36, 0.693));
+    background-image: linear-gradient(110deg, #659999, rgba(231, 117, 36, 0.693));
+    color: rgba(255,255,255,.5);
+    position: relative;
+  
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* The main container for the slider you can modify the width here */
+.slider {
+    padding: 5em 1em;
+    position: relative;
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 30px;
+    
+    
+}
+
+/* Handles the styling of the center line */
+ /* .slider .line1 {
+    background: gray;
+    height: 3px;
+    position: absolute;
+    width: calc(100% - 3em);
+    top: calc(35% - 0px);
+   
+   
+}  */
+
+/* .slider .line2 {
+    background: red;
+    height: 3px;
+    position: absolute;
+    width: calc(100% - 3em);
+    top: calc(56% - 0px);
+} */
+.r1,.r2,.r3,.r4,.r5,.r6,.r7,.r8,.r9,.r9,.r10,.r11
+{
+    margin-left: 5%;
+    
+    
+}
+/* Handles the positioning of the radio button */
+.slider .custom-checkbox {
+    width: calc(20% - 3.25px);
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+
+.slider .custom-checkbox.left {
+    text-align: left;
+    
+    
+    
+}
+
+.slider .custom-checkbox.right {
+    text-align: left;
+}
+
+label {
+    display: inline;
+}
+
+/* Don't display the regular radio */
+.regular-radio {
+    display: none;
+}
+
+/* The style of the radio input */
+.regular-radio+label {
+    background-color: #fafafa;
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    border: 3px solid gray;
+    border-radius: 100%;
+    transition: all .5s;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+}
+
+/* Color values for each radio when hover or checked*/
+#strongly-disagree1.regular-radio:checked+label,
+#strongly-disagree1.regular-radio:hover+label,
+#strongly-disagree2.regular-radio:checked+label,
+#strongly-disagree2.regular-radio:hover+label ,
+#strongly-disagree3.regular-radio:checked+label,
+#strongly-disagree3.regular-radio:hover+label,
+#strongly-disagree4.regular-radio:checked+label,
+#strongly-disagree4.regular-radio:hover+label,
+#strongly-disagree5.regular-radio:checked+label,
+#strongly-disagree5.regular-radio:hover+label,
+#strongly-disagree6.regular-radio:checked+label,
+#strongly-disagree6.regular-radio:hover+label,
+#strongly-disagree7.regular-radio:checked+label,
+#strongly-disagree7.regular-radio:hover+label,
+#strongly-disagree8.regular-radio:checked+label,
+#strongly-disagree8.regular-radio:hover+label,
+#strongly-disagree9.regular-radio:checked+label,
+#strongly-disagree9.regular-radio:hover+label,
+#strongly-disagree10.regular-radio:checked+label,
+#strongly-disagree10.regular-radio:hover+label,
+#strongly-disagree11.regular-radio:checked+label,
+#strongly-disagree11.regular-radio:hover+label
+{
+    background-color: red;
+    border-color: red;
+}
+
+#disagree1.regular-radio:checked+label,
+#disagree1.regular-radio:hover+label,
+#disagree2.regular-radio:checked+label,
+#disagree2.regular-radio:hover+label ,
+#disagree3.regular-radio:checked+label,
+#disagree3.regular-radio:hover+label ,
+#disagree4.regular-radio:checked+label,
+#disagree4.regular-radio:hover+label ,
+#disagree5.regular-radio:checked+label,
+#disagree5.regular-radio:hover+label ,
+#disagree6.regular-radio:checked+label,
+#disagree6.regular-radio:hover+label ,
+#disagree7.regular-radio:checked+label,
+#disagree7.regular-radio:hover+label ,
+#disagree8.regular-radio:checked+label,
+#disagree8.regular-radio:hover+label ,
+#disagree9.regular-radio:checked+label,
+#disagree9.regular-radio:hover+label ,
+#disagree10.regular-radio:checked+label,
+#disagree10.regular-radio:hover+label ,
+#disagree11.regular-radio:checked+label,
+#disagree11.regular-radio:hover+label 
+
+{
+    background-color: orange;
+    border-color: orange;
+}
+
+#neutral1.regular-radio:checked+label,
+#neutral1.regular-radio:hover+label,
+#neutral2.regular-radio:checked+label,
+#neutral2.regular-radio:hover+label,
+#neutral3.regular-radio:checked+label,
+#neutral3.regular-radio:hover+label,
+#neutral4.regular-radio:checked+label,
+#neutral4.regular-radio:hover+label,
+#neutral5.regular-radio:checked+label,
+#neutral5.regular-radio:hover+label,
+#neutral6.regular-radio:checked+label,
+#neutral6.regular-radio:hover+label,
+#neutral7.regular-radio:checked+label,
+#neutral7.regular-radio:hover+label,
+#neutral8.regular-radio:checked+label,
+#neutral8.regular-radio:hover+label,
+#neutral9.regular-radio:checked+label,
+#neutral9.regular-radio:hover+label,
+#neutral10.regular-radio:checked+label,
+#neutral10.regular-radio:hover+label,
+#neutral11.regular-radio:checked+label,
+#neutral11.regular-radio:hover+label
+
+{
+    background-color: gray;
+    border-color: gray;
+}
+
+#agree1.regular-radio:checked+label,
+#agree1.regular-radio:hover+label,
+#agree2.regular-radio:checked+label,
+#agree2.regular-radio:hover+label,
+#agree3.regular-radio:checked+label,
+#agree3.regular-radio:hover+label,
+#agree4.regular-radio:checked+label,
+#agree4.regular-radio:hover+label,
+#agree5.regular-radio:checked+label,
+#agree5.regular-radio:hover+label,
+#agree6.regular-radio:checked+label,
+#agree6.regular-radio:hover+label,
+#agree7.regular-radio:checked+label,
+#agree7.regular-radio:hover+label,
+#agree8.regular-radio:checked+label,
+#agree8.regular-radio:hover+label,
+#agree9.regular-radio:checked+label,
+#agree9.regular-radio:hover+label,
+#agree10.regular-radio:checked+label,
+#agree10.regular-radio:hover+label,
+#agree11.regular-radio:checked+label,
+#agree11.regular-radio:hover+label
+
+{
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+
+#strongly-agree1.regular-radio:checked+label,
+#strongly-agree1.regular-radio:hover+label,
+#strongly-agree2.regular-radio:checked+label,
+#strongly-agree2.regular-radio:hover+label ,
+#strongly-agree3.regular-radio:checked+label,
+#strongly-agree3.regular-radio:hover+label,
+#strongly-agree4.regular-radio:checked+label,
+#strongly-agree4.regular-radio:hover+label,
+#strongly-agree5.regular-radio:checked+label,
+#strongly-agree5.regular-radio:hover+label,
+#strongly-agree6.regular-radio:checked+label,
+#strongly-agree6.regular-radio:hover+label,
+#strongly-agree7.regular-radio:checked+label,
+#strongly-agree7.regular-radio:hover+label,
+#strongly-agree8.regular-radio:checked+label,
+#strongly-agree8.regular-radio:hover+label,
+#strongly-agree9.regular-radio:checked+label,
+#strongly-agree9.regular-radio:hover+label,
+#strongly-agree10.regular-radio:checked+label,
+#strongly-agree10.regular-radio:hover+label,
+#strongly-agree11.regular-radio:checked+label,
+#strongly-agree11.regular-radio:hover+label
+{
+    background-color: green;
+    border-color: green;
+}
+
+.regular-radio+label:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    text-align: center;
+    right: 0;
+    color: white;
+    transition: all .2s ease;
+    /* Controls the transition speed for the checkmark animation */
+}
+
+.regular-radio:checked+label:after {
+    top: calc(50% - 9px);
+    /* Positions the checkmark in the center */
+}
+
+/* The style for the text
+     These tags are inside the labels that way we can click/hover the text and activate the checkbox
+  */
+.tag {
+    font-family: Arial, sans-serif;
+    width: 400%;
+    /* Needs to be bigger than the checkboxes */
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    bottom: -23px;
+    position: absolute;
+    left: -150%;
+}
+
+.slider p {
+    font-size: large;
+}
+
+.subject-faculty{
+    margin-top: 10px ;
+    margin-left: 7%;
+    margin-right: 7%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 25px;
+    /* background-color: maroon; */
+    /*background-image: linear-gradient(-135deg, #6f9c9c, rgba(231, 152, 95, 0.627));
+    box-shadow: 10px 15px 10px rgba(61, 58, 58, 0.427);*/
+
+
+
+       background: rgba(255, 255, 255, 0.05);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+/*
+backdrop-filter: blur(3px) saturate(89%);
+    -webkit-backdrop-filter: blur(3px) saturate(89%);
+    background-color: rgba(17, 25, 40, 0.5);*/
+
+
+
+
+
+}
+
+.subject-faculty{
+
+    color: black;
+    font-weight: 600;
+    margin-bottom: 0px;
+    
+}
+
+
+.container{
+        
+        color: black;
+        width: 100%;
+        max-width: fit-content;
+        margin: 0px auto;
+        
+        
+        padding: 1.3em;
+        padding-left: 30px;
+        background: white;
+        /* background: #0000006d; */
+        /* background-color: rgba(240, 248, 255, 0.637); */
+        border-radius: .75em;
+        -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+        filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+        box-shadow: 
+          0 2px 2px rgba(0, 0, 0, 0.597),
+          0 0px 5px rgba(0, 0, 0, 0.597),
+          0 0px 4px rgba(0, 0, 0, 0.597),
+          0 5px 20px rgba(0, 0, 0, 0.597),
+          0 15px 50px rgba(0, 0, 0, 0.597),
+          inset 0 0 15px rgba(255,255,255,.05);
+    
+          
+     
+}
+
+
+.button-box {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  button {
+    display: inline-block;
+    display: inline-block;
+    width: 80%;
+    margin-top: 1.2em;
+    padding: 1em;
+    max-width: 220px;
+    font-size: .9em;
+    color: #D42D78;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .15em;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 5em;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+    font-size: medium;
+  }
+  
+  button:hover {
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    /* background-color: #f70f3dc2; */
+    background-color: rgba(137, 78, 193, 0.879);
+    transition: 1s;
+  }
+
+  #myTextArea {
+    width: 100%;
+    height: 40px;
+    resize: none;
+    background-color:rgba(202, 195, 195, 0.949);
+    
+   
+   border-radius: 10px;
+   padding:10px;
+   font-size: large;
+   overflow: hidden;
+  }
+
+
+  .comment_section{
+
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+
+  #demo{
+
+    border-radius: 10px;
+    background-color: transparent;
+    align-items: center;
+    align-content: center;
+    color: red;
+    font-size: x-large;
+    text-align: center;
+    
+    /* box-shadow:2px 2px 20px #6f9c9c; */
+    
+    
+  }
+
+  /* @keyframes pulse {
+
+    from {
+        box-shadow: 0 0 0 0 #42426b;
+    }
+
+    to{
+        box-shadow: 0 0 0 20px white;
+    } */
+    
+  /* } */
+
+
+
+
+.rough {
+    font-family: 'Yusei Magic';
+    font-size: 250%;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 10px;
+}
+
+span {
+    color: transparent;
+    animation: blur 4s ease-out infinite;
+    -webkit-animation: blur 5s ease-out infinite;
+}
+
+span:nth-child(1) {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+}
+span:nth-child(2) {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+span:nth-child(3) {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+
+@keyframes blur {
+    0%      {text-shadow:  0 0 100px whitesmoke; opacity:0;}
+    5%      {text-shadow:  0 0 90px whitesmoke;}
+    15%     {opacity: 1;}
+    20%     {text-shadow:  0 0 0px whitesmoke;}
+    80%     {text-shadow:  0 0 0px whitesmoke;}
+    85%     {opacity: 1;}
+    95%     {text-shadow:  0 0 90px whitesmoke;}
+    100%    {text-shadow:  0 0 100px whitesmoke; opacity:0;}
+}
+
+@-webkit-keyframes blur {
+    0%      {text-shadow:  0 0 100px whitesmoke; opacity:0;}
+    5%      {text-shadow:  0 0 90px whitesmoke;}
+    15%     {opacity: 1;}
+    20%     {text-shadow:  0 0 0px whitesmoke;}
+    80%     {text-shadow:  0 0 0px whitesmoke;}
+    85%     {opacity: 1;}
+    95%     {text-shadow:  0 0 90px whitesmoke;}
+    100%    {text-shadow:  0 0 100px whitesmoke; opacity:0;}
+}
+
+
+
+

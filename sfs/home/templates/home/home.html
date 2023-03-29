@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head >
+        <meta name="veiwport" content="with=device-width,initial-scale=1.0">
+        <title>LENDI_FEEDBACK</title>
+        
+         <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+       
+           <section class="header">
+             <nav>
+              
+              <img src="{% static 'images/logo.png' %}">
+                 <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                     <ul>
+                        
+                         <li>  <div class="dropdown">
+                            <button class="dropbtn">CSE</button>
+                            <div class="dropdown-content">
+                              <a href="/cse-1year">1st year</a>
+                              <a href="/cse-2year">2nd year</a>
+                              <a href="/cse-3year">3rd year</a>
+                              <a href="/cse-4year">4th year</a>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        
+                         <li>  <div class="dropdown">
+                            <button class="dropbtn">CSIT</button>
+                            <div class="dropdown-content">
+
+                              <a href="/csit-1year">1st year</a>
+                              <a href="/csit-2year">2nd year</a>
+                              <a href="/csit-3year">3rd year</a>
+                              <a href="/csit-4year">4th year</a>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        
+                         <li>  <div class="dropdown">
+                            <button class="dropbtn">CSSE</button>
+                            <div class="dropdown-content">
+                              <a href="/csse-1year">1st year</a>
+                              <a href="/csse-2year">2nd year</a>
+                              <a href="/csse-3year">3rd year</a>
+                              <a href="/csse-4year">4th year</a>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        
+                         <li>  <div class="dropdown">
+                            <button class="dropbtn">ECE</button>
+                            <div class="dropdown-content">
+                              <a href="/ece-1year">1st year</a>
+                              <a href="/ece-2year">2nd year</a>
+                              <a href="/ece-3year">3rd year</a>
+                              <a href="/ece-4year">4th year</a>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        
+                         <li>  <div class="dropdown">
+                            <button class="dropbtn">EEE</button>
+                            <div class="dropdown-content">
+                              <a href="/eee-1year">1st year</a>
+                              <a href="/eee-2year">2nd year</a>
+                              <a href="/eee-3year">3rd year</a>
+                              <a href="/eee-4year">4th year</a>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        
+                         <li>  <div class="dropdown">
+                            <button class="dropbtn">MECH</button>
+                            <div class="dropdown-content">
+                              <a href="/mech-1year">1st year</a>
+                              <a href="/mech-2year">2nd year</a>
+                              <a href="/mech-3year">3rd year</a>
+                              <a href="/mech-4year">4th year</a>
+                            </div>
+                          </div>
+                        </li>
+                        
+                         
+                         
+                         
+                     </ul>
+                    
+                 </div>
+                 <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+             </nav>
+            
+             <div class="text-box">
+             <h1>LENDI INSTITUTE OF ENGINEERING AND TECHNOLOGY </h1>
+             <P> 
+                 A STEP AHEAD INTO FUTURISTIC CARRERS
+             </P>
+             
+             <h2><i>GIVE YOUR FEEDBACK </i></h2>
+            
+           
+            </section>
+
+
+
+
+
+
+           <script>
+               var navLinks = document.getElementById("navLinks");
+               function showMenu(){
+                   navLinks.style.right = "0";
+               }
+               function hideMenu(){
+                   navLinks.style.right = "-200px";
+               }
+               
+           </script>
+    </body>
+</html>
